@@ -1,0 +1,98 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-09-01T06:21:25.574Z",
+        "line": 13,
+        "name": "Verify if place is being added successfully using AddPlace API",
+        "description": "",
+        "id": "validating-place-api;verify-if-place-is-being-added-successfully-using-addplace-api;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 5005000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Add Place Payload with \"firstname\" \"\u003clanguauge\u003e\" \"world cross center\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"firstname\"",
+                  "offset": 23
+                },
+                {
+                  "val": "\"\u003clanguauge\u003e\"",
+                  "offset": 35
+                },
+                {
+                  "val": "\"world cross center\"",
+                  "offset": 49
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDef.add_place_payload_with(java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7664000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User calls \"AddPlaceAPI\" with \"POST\" http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"AddPlaceAPI\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"POST\"",
+                  "offset": 30
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDef.user_calls_with_post_http_request(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "API call is success with status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 37
+                }
+              ],
+              "location": "stepDefinitions.AddPlaceStepDef.api_call_is_success_with_status_code(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@AddPlace"
+          },
+          {
+            "name": "@Regression"
+          }
+        ]
+      }
+    ],
+    "name": "Validating Place API",
+    "description": "",
+    "id": "validating-place-api",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/AddPlace.feature",
+    "tags": []
+  }
+]
